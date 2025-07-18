@@ -51,6 +51,10 @@
 
         chosen {
         zmk,physical-layout = &physical_layout0;
+        /delete-property/ zephyr,console;
+        /delete-property/ zephyr,shell-uart;
         // Other chosen items
     };
 };
+&xiao_i2c { status = "disabled"; };
+&xiao_serial { status = "disabled"; };
