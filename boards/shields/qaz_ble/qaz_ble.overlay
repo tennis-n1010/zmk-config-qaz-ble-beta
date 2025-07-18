@@ -36,7 +36,7 @@
         //   Key 21 | Key 22 | Key 23 | Key 24 | Key 25 | Key 26 | Key 27 | Key 28 | Key 29
             RC(3,0) RC(3,2) RC(3,4) RC(3,5) RC(3,6) RC(3,7) RC(3,8) RC(3,9) RC(3,10)
         //   Key 30 | Key 31 | Key 32 | Key 33 | Key 34 | Key 35 | Key 36 | Key 37
-            RC(4,0) RC(4,1) RC(4,2) RC(4,5) RC(4,7) RC(4,8) RC(4,9) RC(4,5) RC(4,10)
+            RC(4,0) RC(4,1) RC(4,2) RC(4,5) RC(4,7) RC(4,8) RC(4,9) RC(4,10)
         //   Key 38 | Key 39 | Key 40
             RC(0,8) RC(0,9) RC(0,10)
         >;
