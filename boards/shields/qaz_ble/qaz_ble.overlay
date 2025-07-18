@@ -4,7 +4,7 @@
         compatible = "zmk,kscan-gpio-charlieplex";
         wakeup-source;
 
-        interrupt-gpios = <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN) >;
+        interrupt-gpios = <&gpio0 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN) >;
         gpios
           = <&xiao_d 0 GPIO_ACTIVE_HIGH>
           , <&xiao_d 1 GPIO_ACTIVE_HIGH>
@@ -51,10 +51,6 @@
 
         chosen {
         zmk,physical-layout = &physical_layout0;
-        /delete-property/ zephyr,console;
-        /delete-property/ zephyr,shell-uart;
         // Other chosen items
     };
 };
-&xiao_i2c { status = "disabled"; };
-&xiao_serial { status = "disabled"; };
