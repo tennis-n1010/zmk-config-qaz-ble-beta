@@ -94,7 +94,7 @@
     layouts_qaz_ble_position_map: layouts_qaz_ble_position_map {
         compatible = "zmk,physical-layout-position-map";
 
-            qaz_ble_wk_double_space_posmap: wk_double_space {
+            physical_layout0: wk_double_space {
                 physical-layout = <&qaz_ble_wk_double_space_layout>;
                 positions = <29 30 31 32 33 34 35 36 37 38 39>;
             };
