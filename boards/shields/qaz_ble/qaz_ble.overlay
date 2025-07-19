@@ -47,9 +47,60 @@
         display-name = "Default Layout";
         kscan = <&kscan0>; // Label of the kscan node, optional if all layouts use the same
         transform = <&default_transform>; // Label of the matrix transform for this layout
+        keys  //                     w   h    x    y     rot    rx    ry
+            = <&key_physical_attrs 100 100    0   50       0     0     0>
+            , <&key_physical_attrs 100 100  100   50       0     0     0>
+            , <&key_physical_attrs 100 100  200   50       0     0     0>
+            , <&key_physical_attrs 100 100  300   50       0     0     0>
+            , <&key_physical_attrs 100 100  400   50       0     0     0>
+            , <&key_physical_attrs 100 100  500   50       0     0     0>
+            , <&key_physical_attrs 100 100  600   50       0     0     0>
+            , <&key_physical_attrs 100 100  700   50       0     0     0>
+            , <&key_physical_attrs 100 100  800   50       0     0     0>
+            , <&key_physical_attrs 125 100  900   50       0     0     0>
+            , <&key_physical_attrs 125 100    0  150       0     0     0>
+            , <&key_physical_attrs 100 100  125  150       0     0     0>
+            , <&key_physical_attrs 100 100  225  150       0     0     0>
+            , <&key_physical_attrs 100 100  325  150       0     0     0>
+            , <&key_physical_attrs 100 100  425  150       0     0     0>
+            , <&key_physical_attrs 100 100  525  150       0     0     0>
+            , <&key_physical_attrs 100 100  625  150       0     0     0>
+            , <&key_physical_attrs 100 100  725  150       0     0     0>
+            , <&key_physical_attrs 100 100  825  150       0     0     0>
+            , <&key_physical_attrs 100 100  925  150       0     0     0>
+            , <&key_physical_attrs 175 100    0  250       0     0     0>
+            , <&key_physical_attrs 100 100  175  250       0     0     0>
+            , <&key_physical_attrs 100 100  275  250       0     0     0>
+            , <&key_physical_attrs 100 100  375  250       0     0     0>
+            , <&key_physical_attrs 100 100  475  250       0     0     0>
+            , <&key_physical_attrs 100 100  575  250       0     0     0>
+            , <&key_physical_attrs 100 100  675  250       0     0     0>
+            , <&key_physical_attrs 100 100  775  250       0     0     0>
+            , <&key_physical_attrs 150 100  875  250       0     0     0>
+            , <&key_physical_attrs 100 100    0  350       0     0     0>
+            , <&key_physical_attrs 100 100  100  350       0     0     0>
+            , <&key_physical_attrs 100 100  200  350       0     0     0>
+            , <&key_physical_attrs 225 100  300  350       0     0     0>
+            , <&key_physical_attrs 200 100  525  350       0     0     0>
+            , <&key_physical_attrs 100 100  725  350       0     0     0>
+            , <&key_physical_attrs 100 100  825  350       0     0     0>
+            , <&key_physical_attrs 100 100  925  350       0     0     0>
+            , <&key_physical_attrs  50  50  775    0       0     0     0>
+            , <&key_physical_attrs  50  50  825    0       0     0     0>
+            , <&key_physical_attrs  50  50  875    0       0     0     0>
+            ;
     };
 
-        chosen {
+    layouts_qaz_ble_position_map: layouts_qaz_ble_position_map {
+        compatible = "zmk,physical-layout-position-map";
+
+            qaz_ble_wk_double_space_posmap: wk_double_space {
+                physical-layout = <&qaz_ble_wk_double_space_layout>;
+                positions = <29 30 31 32 33 34 35 36 37 38 39>;
+            };
+    };
+
+    chosen {
         zmk,physical-layout = &physical_layout0;
         // Other chosen items
     };
